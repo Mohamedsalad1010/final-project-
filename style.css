@@ -6,19 +6,22 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-header {
-    background: rgba(0, 0, 0, 0.5);
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-sticky {
+   background-color: white;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) transparent;
-
     height: 5rem;
-    position: sticky;
+    position: fixed;
     z-index: 1111;
     top: 0;
-
-
-
 }
+
+
 
 .container {
     max-width: 1110px;
@@ -44,7 +47,7 @@ header {
 
 .disktop-menu ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(42, 41, 41);
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -67,7 +70,7 @@ header {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 900;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 span {
@@ -198,8 +201,8 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
- gap:  2rem;
-padding-top: 8rem;
+ gap:  1rem;
+padding-top: 5rem;
 padding-bottom: 5rem;
 }
 .text-container h2{
@@ -552,9 +555,9 @@ iframe{
     
 }
 
-.image-map{
+/* .image-map{
     height: 100%;
-}
+} */
 
 
 .contact-container {
@@ -572,7 +575,7 @@ iframe{
  
     background-color: #fff;
     padding: 2.5rem;
-    height: 25rem;
+    height: 27rem;
     border-radius: 5px;
     
 }
@@ -641,13 +644,14 @@ iframe{
 
 /* footer */
 footer{
- 
+
     text-align: center;
     padding: 1.875rem 0rem;
    
 }
 
 .footer p{
+   
     color: #232d39;
     font-size: 13px;
     margin-top: 1rem;
@@ -712,7 +716,8 @@ font-size: 3rem;
 }
    
 .map-container{
-    height: 50vh;
+    height: 60vh;
+ margin-bottom: 1rem;
 }
 
     /* endsection6 */
@@ -733,7 +738,9 @@ font-size: 3rem;
 .map-container{
     gap: .3rem;
     height: 100vh;
+    
 }
+
 /* end section6*/
     /* section4 */
     .section4-grid-cards{
@@ -798,20 +805,16 @@ font-size: 3rem;
 
     .mobile-menu {
         display: flex;
-        /* height: 100%; */
-
-
         z-index: -11;
-
-
-
-        /* justify-content: center; */
         width: 100%;
         flex-direction: column;
         inset: 0 0 0 0;
         transition: transform 1s ease-in-out;
         transform: translateY(-1000%);
 
+    }
+    .menus li a:hover{
+        color: #ed563b;
     }
 
     .mobile-menu[data-visible="true"] {
@@ -846,7 +849,7 @@ font-size: 3rem;
         align-items: center;
         /* justify-content: center; */
         gap: 10px;
-        background-color: #f7f7f7;
+        background-color: #ffffff;
         padding-top: 40px;
         z-index: -1;
     }
